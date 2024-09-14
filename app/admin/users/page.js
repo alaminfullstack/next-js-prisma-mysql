@@ -1,6 +1,6 @@
 import { PrismaClient } from '@prisma/client';
 import Link from 'next/link';
-import UserList from './../components/UserList';
+import UserList from './../../components/UserList';
 
 const prisma = new PrismaClient();
 
@@ -11,7 +11,7 @@ export default async function User() {
   return (
     <div>
       <h1>Users</h1>
-      <Link href={'/users/create-user'}>Create New User</Link>
+      <Link href={'/admin/users/create-user'}>Create New User</Link>
       {/* Pass users data to the Client Component */}
       <UserList users={users} />
     </div>

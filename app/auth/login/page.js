@@ -34,7 +34,7 @@ export default function Login() {
     if (data.success) {
       localStorage.setItem('token', data.token);
       localStorage.setItem('user', JSON.stringify(data.user));
-      router.push('/dashboard');
+      router.push('/admin/dashboard');
     } else {
       alert(data.message || 'Login failed');
     }

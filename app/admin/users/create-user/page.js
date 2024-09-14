@@ -37,7 +37,7 @@ export default function NewUserForm() {
   return (
     <div className='container mx-auto px-3'>
       <h1>Create New User</h1>
-      <Link href={'/users'}>User List</Link>
+      <Link href={'/admin/users'}>User List</Link>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <form onSubmit={handleSubmit}>
         <label className='text-blue-500 w-100 mb-2 block'>Name:</label>

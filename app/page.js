@@ -11,7 +11,7 @@ export default async function Home() {
   return (
     <div>
       <h1>Users</h1>
-      <Link href={'/users/create-user'}>Create New User</Link>
+      <Link href={'/admin/users/create-user'}>Create New User</Link>
       {/* Pass users data to the Client Component */}
       <UserList users={users} />
     </div>

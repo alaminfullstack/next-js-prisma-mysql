@@ -34,7 +34,7 @@ export default function EditUserForm() {
     });
 
     if (res.ok) {
-      router.push('/'); // Redirect after updating
+      router.push('/admin/users'); // Redirect after updating
     } else {
       const data = await res.json();
       setError(data.error);
