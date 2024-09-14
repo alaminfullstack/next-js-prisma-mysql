@@ -1,10 +1,10 @@
 import { PrismaClient } from '@prisma/client';
-import UserList from './components/UserList'; // Import the Client Component
 import Link from 'next/link';
+import UserList from './../components/UserList';
 
 const prisma = new PrismaClient();
 
-export default async function Home() {
+export default async function User() {
   // Fetch users from Prisma on the server side
   const users = await prisma.user.findMany();
 

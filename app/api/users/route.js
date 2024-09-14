@@ -11,6 +11,8 @@ export async function POST(req) {
       data: {
         name: body.name,
         email: body.email,
+        phone: body.phone,
+        password: body.password
       },
     });
 
@@ -19,6 +21,7 @@ export async function POST(req) {
       headers: { 'Content-Type': 'application/json' },
     });
   } catch (error) {
+    console.log(error)
     return new Response(JSON.stringify({ error: 'Failed to create user' }), {
       status: 500,
       headers: { 'Content-Type': 'application/json' },

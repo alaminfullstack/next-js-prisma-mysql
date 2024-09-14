@@ -31,7 +31,7 @@ export default function UserList({ users }) {
           <li key={user.id}>
             {user.name} - {user.email}
             <button onClick={() => handleDelete(user.id)}>Delete</button>
-            <button onClick={() => router.push(`/edit-user/${user.id}`)}>Edit</button>
+            <button onClick={() => router.push(`/users/edit-user/${user.id}`)}>Edit</button>
           </li>
         ))
       ) : (
